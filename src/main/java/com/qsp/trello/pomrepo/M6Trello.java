@@ -21,4 +21,16 @@ public class M6Trello {
 	public WebElement getLogOut() {
 		return logOut;
 	}
+
+	@FindBy (xpath = "li[class='mlpxvZU4v4cMQN wVRQcl7CJz79Tr qUkRGnTnJDff85'] button[aria-label='Board actions menu']") private WebElement boardOption;
+	public WebElement getBoardOption() {
+		return boardOption;
+	}
+	
+	@FindBy(xpath = "//div[@class='q2PzD_Dkq1FVX3 px-0 pt-0 pb-0']") private WebElement closeBoardButton;
+	public WebElement getCloseBoardButton() {
+		return closeBoardButton;
+	}
+
+
 }
