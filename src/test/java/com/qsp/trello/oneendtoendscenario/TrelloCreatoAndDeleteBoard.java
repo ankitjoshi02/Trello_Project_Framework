@@ -23,6 +23,7 @@ public class TrelloCreatoAndDeleteBoard extends BaseClass{
 		LogoutPage logoutPage=new LogoutPage(driver);
 		homepage.getLoginLink().click();
 		loginTrello.getusernameTextfield().sendKeys(fileutils.readTheDataFromPropertyFIle("username"));
+		loginTrello.getContinueButton().click();
 		loginTrello.getpasswordTextfield().sendKeys(fileutils.readTheDataFromPropertyFIle("password"));
 		loginTrello.getloginButton().click();
 		boardTrello.getCreateButton().click();

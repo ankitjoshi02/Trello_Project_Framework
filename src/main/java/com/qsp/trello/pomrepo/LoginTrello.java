@@ -1,3 +1,4 @@
+
 package com.qsp.trello.pomrepo;
 
 import org.openqa.selenium.WebDriver;
@@ -15,6 +16,11 @@ public class LoginTrello {
 	@FindBy(id="username") private WebElement usernameTextfield;
 	public WebElement getusernameTextfield() {
 		return usernameTextfield;
+	}
+	
+	@FindBy(xpath = "//span[text()='Continue']") private WebElement continueButton;
+	public WebElement getContinueButton() {
+		return continueButton;
 	}
 	
 	@FindBy(id="password") private WebElement passwordTextfield;
